@@ -1,0 +1,32 @@
+/* base styles */
+
+body { padding: 20px; }
+.container-fluid { max-width: 1200px; }
+h1 { margin: .5em 0 1.5em; }
+h2 { margin-top: 0; }
+
+/* add styles here */
+
+@media (min-width: 768px)
+{
+	.row-relative { position: relative; }
+
+	.col-border 
+	{ 
+		padding-left: 0; 
+		position: static; 
+	}
+	
+	.col-border-padding { padding-left: 15px; }
+
+	.col-border:before 
+	{
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		border-left: 1px solid red;
+	}	
+}
+
+
